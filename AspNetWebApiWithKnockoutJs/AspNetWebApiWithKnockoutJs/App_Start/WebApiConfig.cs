@@ -14,6 +14,9 @@ namespace AspNetWebApiWithKnockoutJs
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            config.Formatters.Clear();
+            config.Formatters.Add(new MyCustomJsonFormatter());
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
