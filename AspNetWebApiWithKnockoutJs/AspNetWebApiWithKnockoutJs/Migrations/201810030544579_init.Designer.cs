@@ -13,7 +13,7 @@ namespace AspNetWebApiWithKnockoutJs.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201810021819376_init"; }
+            get { return "201810030544579_init"; }
         }
         
         string IMigrationMetadata.Source
